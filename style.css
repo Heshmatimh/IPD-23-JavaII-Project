@@ -1,1 +1,166 @@
-/* This is css file of project*/
+.main {
+	width: 100px;
+	height: 100px;
+	margin: 200px auto;
+	position: relative;
+    transform-style: preserve-3d;
+	background-attachment: fixed;
+	animation: name 10s linear infinite;
+}
+
+.internal div {
+	width: 100px;
+	height: 100px;
+	position: absolute ;
+	top: 0;
+	left: 0;
+
+}
+
+ #a {
+	transform: translateZ(50px);
+	background: url(../image/01.png);
+}
+
+ #b {
+	transform: rotateX(180deg) translateZ(50px);
+	background: url(../image/02.png);
+}
+
+ #c {
+	transform: rotateX(-90deg) translateZ(50px);
+	background: url(../image/03.png);
+}
+
+ #d {
+	transform: rotateX(90deg) translateZ(50px);
+	background: url(../image/04.png);
+}
+
+
+ #e {
+	transform: rotateY(-90deg) translateZ(50px);
+	background: url(../image/05.png);
+}
+
+ #f {
+	transform: rotateY(90deg) translateZ(50px);
+	background: url(../image/06.png);
+}
+
+@keyframes name {
+	from {
+		transform: rotateX(0deg) rotateY(0);
+	}
+
+	to {
+		transform: rotateX(360deg) rotateY(360deg);
+	}
+
+}
+
+
+.external div {
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;
+	position: absolute;
+	opacity: 0.2;
+	top: -50px;
+	left: -50px;
+	transition: all 1s;
+}
+
+#A {
+	transform: translateZ(100px);
+	background: url(../image/1.png);
+	background-size: cover;
+}
+
+ #B {
+	transform: rotateX(180deg) translateZ(100px);
+	background: url(../image/2.png);
+	background-size: cover;
+}
+
+#C {
+	transform: rotateX(-90deg) translateZ(100px);
+	background: url(../image/3.png);
+	background-size: cover;
+}
+
+ #D {
+	transform: rotateX(90deg) translateZ(100px);
+	background: url(../image/4.png);
+	background-size: cover;
+}
+
+#E {
+	transform: rotateY(-90deg) translateZ(100px);
+	background: url(../image/5.png);
+	background-size: cover;
+}
+
+#F {
+	transform: rotateY(90deg) translateZ(100px);
+	background: url(../image/6.png);
+	background-size: cover;
+}
+
+.main:hover  #A {
+	transform: translateZ(300px)  ;
+	width: 400px;
+	height: 400px;
+	opacity: 0.8;
+	top: -100px;
+	left: -100px;
+}
+
+.main:hover  #B {
+	transform: rotateX(180deg) translateZ(300px);
+	width: 400px;
+	height: 400px;
+	opacity: 0.8;
+	top: -100px;
+	left: -100px;
+}
+
+.main:hover  #C {
+	transform: rotateX(-90deg) translateZ(300px);
+	width: 400px;
+	height: 400px;
+	opacity: 0.8;
+	top: -100px;
+	left: -100px;
+}
+
+.main:hover  #D {
+	transform: rotateX(90deg) translateZ(300px);
+	width: 400px;
+	height: 400px;
+	opacity: 0.8;
+	top: -100px;
+	left: -100px;
+}
+
+.main:hover  #E {
+	transform: rotateY(-90deg) translateZ(300px);
+	width: 400px;
+	height: 400px;
+	opacity: 0.8;
+	top: -100px;
+	left: -100px;
+}
+
+.main:hover #F {
+	transform: rotateY(90deg) translateZ(300px);
+	width: 400px;
+	height: 400px;
+	opacity: 0.8;
+	top: -100px;
+	left: -100px;
+}
+
+section h2 {
+	text-align: center;
+}
