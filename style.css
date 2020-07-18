@@ -1,11 +1,11 @@
-.main {
+ .main {
 	width: 100px;
 	height: 100px;
 	margin: 200px auto;
 	position: relative;
     transform-style: preserve-3d;
 	background-attachment: fixed;
-	animation: name 10s linear infinite;
+	animation: name 20s linear infinite;
 }
 
 .internal div {
@@ -161,6 +161,74 @@
 	left: -100px;
 }
 
-section h2 {
+ h2 {
 	text-align: center;
 }
+
+h3 {
+	font-size:1px;
+	
+}
+
+.main:hover h3{
+	font-size: 20px;
+}
+.main:hover #x{
+	transform: rotateY(-60deg) translateZ(150px);
+	 font-size: 20px;
+	 font-feature-settings: "calt" ;
+	 color: blanchedalmond;
+}
+.main:hover #y{
+	transform: rotateY(-60deg) translateZ(200px);
+	font-size: 20px;
+	color: blanchedalmond;
+}
+.main:hover #z{
+	transform: rotateY(-60deg) translateZ(250px);
+	font-size: 10px;
+	color: blanchedalmond;
+}
+
+div.byedaq div{
+    width: 50px;
+	height: 50px;
+	margin: 0 auto;
+	position: absolute ;
+	top: 25px;
+	left:25px;
+	transition:2s ease .1ms ;
+ }
+
+.green {
+background: green ;
+ transform: rotate(45deg) translateZ(50px);
+ color:white;
+}
+
+.yellow{
+border: 2px solid white;
+box-sizing: border-box;
+background: yellow;
+border-radius:  50%;
+transform: scale(.85, .85) translateZ(50px);
+font-size: xx-small;
+color: yellow;
+}
+
+.red{
+border:8px solid white;
+box-sizing: border-box;
+background: rgb(200, 30, 120);
+border-radius: 50%;
+transform: scale(.3, .3) translateZ(50px) ;
+}
+.main:hover .byedaq{
+	transform:  scale(2, 2) translateZ(300px) translateX(-125px);
+	}
+
+	div .byedaq:hover .yellow{
+	font-size: 40px;
+	color:black;
+		transform:  scale(20, 20);
+	} 
