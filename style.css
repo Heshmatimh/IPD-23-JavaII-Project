@@ -1,11 +1,9 @@
  .main {
 	width: 100px;
 	height: 100px;
-	margin: 200px auto;
-	position: relative;
+    margin: 200px auto;
     transform-style: preserve-3d;
-	background-attachment: fixed;
-	animation: name 20s linear infinite;
+	animation: bang 20s linear infinite;
 }
 
 .internal div {
@@ -14,6 +12,7 @@
 	position: absolute ;
 	top: 0;
 	left: 0;
+	transition: all 1s;
 
 }
 
@@ -35,6 +34,7 @@
  #d {
 	transform: rotateX(90deg) translateZ(50px);
 	background: url(../image/04.png);
+	background-size: cover;
 }
 
 
@@ -48,7 +48,7 @@
 	background: url(../image/06.png);
 }
 
-@keyframes name {
+@keyframes bang {
 	from {
 		transform: rotateX(0deg) rotateY(0);
 	}
@@ -63,7 +63,6 @@
 .external div {
 	width: 200px;
 	height: 200px;
-	transform-style: preserve-3d;
 	position: absolute;
 	opacity: 0.2;
 	top: -50px;
@@ -106,6 +105,7 @@
 	background: url(../image/6.png);
 	background-size: cover;
 }
+
 
 .main:hover  #A {
 	transform: translateZ(300px)  ;
@@ -160,15 +160,36 @@
 	top: -100px;
 	left: -100px;
 }
-
- h2 {
-	text-align: center;
+.main:hover #a{
+	transform: translateZ(100px);
 }
 
-h3 {
-	font-size:1px;
+.main:hover #b{
+	transform: rotateX(180deg) translateZ(100px);
+}
+
+.main:hover #c{
+	transform: rotateX(-90deg) translateZ(100px);
+}
+
+.main:hover #d {
+	transform: rotateX(90deg) translateZ(100px);
+}
+
+.main:hover #e {
+	transform: rotateY(-90deg) translateZ(100px);
+}
+
+.main:hover #f {
+	transform: rotateY(90deg) translateZ(100px);
+
+}
+
+	h2{text-align: center;}
+
+
+	h3 {font-size:1px;}
 	
-}
 
 .main:hover h3{
 	font-size: 20px;
@@ -197,12 +218,12 @@ div.byedaq div{
 	position: absolute ;
 	top: 25px;
 	left:25px;
-	transition:2s ease .1ms ;
+	transition:2s linear .1ms ;
  }
 
 .green {
 background: green ;
- transform: rotate(45deg) translateZ(50px);
+ transform: rotate(45deg) ;
  color:white;
 }
 
@@ -211,7 +232,7 @@ border: 2px solid white;
 box-sizing: border-box;
 background: yellow;
 border-radius:  50%;
-transform: scale(.85, .85) translateZ(50px);
+transform: scale(.85, .85) ;
 font-size: xx-small;
 color: yellow;
 }
@@ -221,14 +242,15 @@ border:8px solid white;
 box-sizing: border-box;
 background: rgb(200, 30, 120);
 border-radius: 50%;
-transform: scale(.3, .3) translateZ(50px) ;
+transform: scale(.3, .3)  ;
 }
 .main:hover .byedaq{
-	transform:  scale(2, 2) translateZ(300px) translateX(-125px);
+	transform:  scale(2, 2) translateY(-87.5px) ;
 	}
 
-	div .byedaq:hover .yellow{
+div .byedaq:hover .yellow{
 	font-size: 40px;
 	color:black;
-		transform:  scale(20, 20);
+		transform:  scale(30, 30)  ;
+	
 	} 
