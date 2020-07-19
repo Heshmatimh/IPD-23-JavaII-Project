@@ -13,7 +13,6 @@
 	top: 0;
 	left: 0;
 	transition: all 1s;
-
 }
 
  #a {
@@ -34,9 +33,7 @@
  #d {
 	transform: rotateX(90deg) translateZ(50px);
 	background: url(../image/04.png);
-	background-size: cover;
-}
-
+ }
 
  #e {
 	transform: rotateY(-90deg) translateZ(50px);
@@ -56,9 +53,7 @@
 	to {
 		transform: rotateX(360deg) rotateY(360deg);
 	}
-
 }
-
 
 .external div {
 	width: 200px;
@@ -106,14 +101,13 @@
 	background-size: cover;
 }
 
-
 .main:hover  #A {
 	transform: translateZ(300px)  ;
 	width: 400px;
 	height: 400px;
 	opacity: 0.8;
-	top: -100px;
-	left: -100px;
+	top: -150px;
+	left: -150px;
 }
 
 .main:hover  #B {
@@ -121,8 +115,8 @@
 	width: 400px;
 	height: 400px;
 	opacity: 0.8;
-	top: -100px;
-	left: -100px;
+	top: -150px;
+	left: -150px;
 }
 
 .main:hover  #C {
@@ -130,8 +124,8 @@
 	width: 400px;
 	height: 400px;
 	opacity: 0.8;
-	top: -100px;
-	left: -100px;
+	top: -150px;
+	left: -150px;
 }
 
 .main:hover  #D {
@@ -139,8 +133,8 @@
 	width: 400px;
 	height: 400px;
 	opacity: 0.8;
-	top: -100px;
-	left: -100px;
+	top: -150px;
+	left: -150px;
 }
 
 .main:hover  #E {
@@ -148,8 +142,8 @@
 	width: 400px;
 	height: 400px;
 	opacity: 0.8;
-	top: -100px;
-	left: -100px;
+	top: -150px;
+	left: -150px;
 }
 
 .main:hover #F {
@@ -157,8 +151,8 @@
 	width: 400px;
 	height: 400px;
 	opacity: 0.8;
-	top: -100px;
-	left: -100px;
+	top: -150px;
+	left: -150px;
 }
 .main:hover #a{
 	transform: translateZ(100px);
@@ -182,14 +176,11 @@
 
 .main:hover #f {
 	transform: rotateY(90deg) translateZ(100px);
-
 }
 
 	h2{text-align: center;}
 
-
 	h3 {font-size:1px;}
-	
 
 .main:hover h3{
 	font-size: 20px;
@@ -197,7 +188,6 @@
 .main:hover #x{
 	transform: rotateY(-60deg) translateZ(150px);
 	 font-size: 20px;
-	 font-feature-settings: "calt" ;
 	 color: blanchedalmond;
 }
 .main:hover #y{
@@ -234,7 +224,7 @@ background: yellow;
 border-radius:  50%;
 transform: scale(.85, .85) ;
 font-size: xx-small;
-color: yellow;
+color: #ffff01;
 }
 
 .red{
@@ -252,5 +242,4 @@ div .byedaq:hover .yellow{
 	font-size: 40px;
 	color:black;
 		transform:  scale(30, 30)  ;
-	
 	} 
